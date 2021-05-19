@@ -5,7 +5,11 @@ export default class World {
     player2Tank = null
     enemyTank = []
 
-    update() {
-        
+    update(key, isMoving) {
+        if (isMoving) {
+            if (key === 'ArrowUp') {
+                this.player1Tank.y -=1
+            }
+        }
     }
 }

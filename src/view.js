@@ -10,11 +10,15 @@ export default class View {
         await this.sprite.load()
     }
 
-    update() {
-        this.renderPlayer1Tank()
+    update(world) {
+        this.renderPlayer1Tank(world.player1Tank)
     }
 
-    renderPlayer1Tank() {
-        
+    renderPlayer1Tank(player1Tank) {
+        this.context.drawImage(
+            this.sprite.image, 
+            0, 0, 30, 30,
+            player1Tank.x, player1Tank.y, 30, 30
+        )
     }
 }

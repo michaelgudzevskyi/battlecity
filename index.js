@@ -18,4 +18,4 @@ game.init().then(() => game.start())
 console.log(game);
 
 
-// Finished 51:01
+// Finished 1:09:15 
